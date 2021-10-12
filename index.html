@@ -4,9 +4,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VGS</title>
+    <style>
+        body{
+            margin: 0%;
+        }
+
+        /* Navbar */
+
+        .navbar{
+            height: 50px;
+            background-color: black;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .title{
+            color: white;
+            font-size: 30px;
+        }
+        .navListContainer{
+            display: flex;
+            justify-content: space-between;
+            width: 20%;
+        }
+        .search{
+            height: 40px;
+            width: 90px;
+        }
+        .textbox{
+            height: 35px;
+            width: 300px;
+        }
+        .navList{
+            text-decoration: none;
+            list-style: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        /* Banner */
+
+        .bannerBackground{
+            width: 100%;
+            height: 450px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .bannerItem{
+            width: 850px;
+            height: 400px;
+            background-color: black;
+            color: white;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        /* Top Sellers */
+
+        .topSellers{
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            font-size: 30px;
+            align-items: center;
+        }
+        .topSellerContainer{
+            display: flex;
+            flex-direction: row;
+            color: white;
+            font-size: 50px;
+            justify-content: space-around;
+            height: 300px;
+            align-items: center;
+        }
+        .topSellerItem{
+            width: 300px;
+            height: 250px;
+            background-color: black;
+            justify-content: center;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        /* New Releases */
+
+        .newReleases{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:20px;
+        }
+        .newReleasesItem{
+            background-color: black;
+            display: flex;
+            width: 96%;
+            height: 450px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+
+        /* footer */
+
+        .footer{
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            margin-top: 50px;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Navbar -->
+    <div>
+    <div id="Navbar" class="navbar">
+        <div class="title"><b> VGS </b></div>
+        <div>
+        <input class="textbox" id="textBox" type="Enter a city" placeholder="Search games">
+        <button class="search" onClick="search()" id="searchButton" >Search</button>
+        </div>
+        <ul class="navListContainer">
+            <li class="navList">New Releases</li>
+            <li class="navList">Top Sellers</li>
+            <li class="navList">Free To Play</li>
+        </ul>
+        </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="bannerBackground">
+        <div class="bannerItem">Horror Games</div>
+        <div class="bannerItem">Mobile Games</div>
+    </div>
+
+    <!-- Top Sellers -->
+    <!-- 5 personalised pages for each game -->
+    <div class="topSellers">
+        <b> Top Sellers </b>
+    </div>
+    <div class="topSellerContainer">
+        <div class="topSellerItem">Fortnite</div>
+        <div class="topSellerItem">Prey</div>
+        <div class="topSellerItem">Halo</div>
+        <div class="topSellerItem">Valorant</div>
+        <div class="topSellerItem">Apex</div>
+    </div>
+
+    <!-- New Releases -->
+    <div class="newReleases">
+        <div class="newReleasesItem">New Releases</div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Footer
+    </div>
 </body>
 </html>
