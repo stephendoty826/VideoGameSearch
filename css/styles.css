@@ -1,0 +1,231 @@
+    /* Constant */
+
+        body{
+            margin: 0%;
+        }
+
+        /* Navbar */
+
+        .navbar{
+            height: 50px;
+            background-color: black;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .title{
+            color: white;
+            font-size: 30px;
+        }
+        .navListContainer{
+            display: flex;
+            justify-content: space-between;
+            width: 20%;
+        }
+        .search{
+            height: 40px;
+            width: 90px;
+        }
+        .textbox{
+            height: 35px;
+            width: 300px;
+        }
+        .navList{
+            text-decoration: none;
+            list-style: none;
+            font-size: 20px;
+            color: white;
+        }
+
+        /* Home Page */
+
+        /* Banner */
+
+        .bannerBackground{
+            width: 100%;
+            height: 450px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .bannerItem{
+            width: 850px;
+            height: 400px;
+            background-color: black;
+            color: white;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        /* Top Sellers */
+
+        .topSellers{
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            font-size: 30px;
+            align-items: center;
+        }
+        .topSellerContainer{
+            display: flex;
+            flex-direction: row;
+            color: white;
+            font-size: 50px;
+            justify-content: space-around;
+            height: 300px;
+            align-items: center;
+        }
+        .topSellerItem{
+            width: 300px;
+            height: 250px;
+            background-color: black;
+            justify-content: center;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        /* New Releases */
+
+        .newReleases{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top:20px;
+        }
+        .newReleasesItem{
+            background-color: black;
+            display: flex;
+            width: 96%;
+            height: 450px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+
+        /* footer */
+
+        .footer{
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            margin-top: 50px;
+        }
+
+        /* Item Page */
+
+        .banner{
+            height: 500px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .bannerTitle{
+            font-size: 80px;
+        }
+        .screenshotContainer{
+            display: flex;
+            justify-content: space-between;
+            height: 300px;
+        }
+        .bannerScreenshots{
+            height: 300px;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+
+        /* Info Display */
+
+        .mainTitle{
+            height: 150px;
+            display: flex;
+            align-items: center;
+            font-size: 70px;
+            padding-left: 70px;
+            
+        }
+        .mainDisplay{
+            display: flex;
+            height: 500px;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            /* background-color: black; */
+        }
+        .description{
+            /* background-color: pink; */
+            width: 100%;
+            height: 500px;
+            justify-content: center;
+            display: flex;
+            margin-left: 20px;
+        }
+        .gameInfoContainer{
+            /* background-color: red; */
+            width: 100%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            /* margin-right: 20px; */
+        }
+        .infoDescription{
+            font-size: 35px;
+            display: flex;
+            margin-left: 50px;
+        }
+        .ratings{
+            display: flex;
+            flex-direction: row;
+        }
+        .gameInfo{
+            font-size: 45px;
+            padding-bottom: 20px;
+        }
+        .displayContainer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .similar{
+            width: 100%;
+            height: 400px;
+            /* background-color: gray; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .similarGame{
+            height: 350px;
+            width: 300px;
+            background-color: black;
+        }
+        .similarTitleContainer{
+            width: 100%;
+            height:50px;
+            /* background-color: gray; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .similarGameTitle{
+            font-size: 30px;
+            width: 300px;
+            /* color: white; */
+        }
