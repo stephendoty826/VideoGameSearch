@@ -1,6 +1,6 @@
-
-fetch("key=YOUR_API_KEY&dates=2019-09-01,2019-09-30&platforms=18,1,7")
+console.log(apiKey);
+fetch(`https://api.rawg.io/api/games?key=${apiKey}&page=1&pageSize=50`)
 .then(response => response.json())
 .then((data) => {
     console.log(data);
-}
+})
