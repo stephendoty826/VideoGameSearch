@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VGS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bestSellers.css">
 </head>
 <body>
     <!-- Navbar -->
     <div>
     <div id="Navbar" class="navbar">
         <div class="navbarTop">
-            <a class="title" href="">VGS</a>
+            <a class="titleNav" href="">VGS</a>
             <ul class="navListContainer">
                 <a class="navList" href="">New Releases</a>
                 <a class="navList" href="">Top Sellers</a>
@@ -31,7 +35,7 @@
         <div class="bannerColumns">
             <img class="bannerItem" src="https://media.rawg.io/media/games/9d5/9d5aa70db8c16566d79712df6417d13a.jpg" alt="Dead Space 2">
             <div class="bannerTextContainer">
-                <a class="bannerMainText" href=""><b> Horror Games</b></a>
+                <a class="bannerMainText" href=""><b>Horror Games</b></a>
                 <a class="bannerExploreText" href="">Explore</a>
             </div>
         </div>
@@ -54,8 +58,6 @@
     <div class="topSellerContainer">
         <div class="topSellerItem">
             <img class="imagetopSellerItem" src="https://i.ytimg.com/vi/8eokfVV7ZSo/maxresdefault.jpg" alt="Fortnite Battle Royale">
-            <!-- <img src="https://media.rawg.io/media/games/dcb/dcbb67f371a9a28ea38ffd73ee0f53f3.jpg" alt="Fortnite Battle Royale"> -->
-            <!-- Fortnite -->
             <div class="opacityTopSellerItem"></div>
             <div class="titleTopSellerItem">Fortnite</div>
         </div>
@@ -78,8 +80,25 @@
     </div>
 
     <!-- New Releases -->
-    <div class="newReleases">
-        <div class="newReleasesItem">New Releases</div>
+    <div class="newReleasesContainer">
+        <div class="newReleases">
+            <div class="newReleasesItem">
+                <img class="imageNewReleasesItem" src="https://media.rawg.io/media/games/4fe/4feffcec6315c5f5a96442a8444431ca.jpg" alt="Back 4 Blood">
+            </div>
+            <div class="newReleasesItem">
+                <img class="imageNewReleasesItem" src="https://media.rawg.io/media/games/af2/af2b640fa820e8a8135948a4cd399539.jpg" alt="Battlefield 2042">
+            </div>
+            <div class="newReleasesItem">
+                <img class="imageNewReleasesItem" src="https://cdn.wccftech.com/wp-content/uploads/2020/08/WCCFaeonmustdie1.jpg" alt="Aeon Must Die">
+            </div>
+            <div class="newReleasesItem">
+                <img class="imageNewReleasesItem" src="https://marketresearchtelecast.com/wp-content/uploads/2021/08/1629893598_Forza-Horizon-5-begins-with-you-being-parachuted-into-the-1280x720.jpg" alt="Forza Horizon 5">
+            </div>
+            <div class="opacityNewReleaseItem"></div>
+            <div class="newReleasesText">
+                New Releases
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -87,7 +106,6 @@
         Footer
     </div>
 
-    <script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>
     <script src="games.js"></script>
     <script src="js/apiKeys.js"></script>
     <script src="js/apiFetch.js"></script>
