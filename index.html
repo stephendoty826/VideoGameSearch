@@ -11,23 +11,38 @@
     <!-- Navbar -->
     <div>
     <div id="Navbar" class="navbar">
-        <div class="title"><b> VGS </b></div>
-        <div class="searchbarContainer">
-        <input class="textbox" id="textBox" type="Enter a city" placeholder="Search games">
-        <button class="search" onClick="search()" id="searchButton" >Search</button>
+        <div class="navbarTop">
+            <div class="title"><b> VGS </b></div>
+            <ul class="navListContainer">
+                <li class="navList">New Releases</li>
+                <li class="navList">Top Sellers</li>
+                <li class="navList">Free To Play</li>
+            </ul>
         </div>
-        <ul class="navListContainer">
-            <li class="navList">New Releases</li>
-            <li class="navList">Top Sellers</li>
-            <li class="navList">Free To Play</li>
-        </ul>
+        <div class="searchbarContainer">
+            <input class="textbox" id="textBox" type="Enter a city" placeholder="Search games">
+            <button class="search" onClick="search()" id="searchButton" >Go</button>
+        </div>
         </div>
     </div>
 
     <!-- Banner -->
     <div class="bannerBackground">
-        <div class="bannerItem">Horror Games</div>
-        <div class="bannerItem">Mobile Games</div>
+        <div class="bannerColumns">
+            <div class="bannerItem"></div>
+            <div class="bannerTextContainer">
+                <div><b class="bannerMainText"> Horror Games</b></div>
+                <div class="bannerExploreText"> Explore</b></div>
+            </div>
+        </div>
+        <div class="bannerColumns">
+            <div class="bannerItem"></div>
+            <div class="bannerTextContainer">
+                <div><b class="bannerMainText"> Mobile Games</b></div>
+                <div class="bannerExploreText"> Explore</div>
+            </div>
+        </div>
+        
     </div>
 
     <!-- Top Sellers -->
