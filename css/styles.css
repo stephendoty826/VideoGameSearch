@@ -141,16 +141,39 @@
             /* background-color: brown; */
         }
         .topSellerItem{
-            width: 15%;
+            width: 20%;
             height: 100%;
-            background-color: black;
-            /* justify-content: center; */
+            background-color: pink;
+            justify-content: center;
             display: flex;
             align-items: flex-end;
-            padding-bottom: 10px;
-            padding-left: 25px;
+            /* padding-bottom: 10px;
+            padding-left: 25px; */
             -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
             box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57);
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .imagetopSellerItem{
+            height: 100%;
+        }
+        .opacityTopSellerItem{
+            position: absolute;
+            background-color: black;
+            opacity: 70%;
+            z-index: 5;
+            bottom: 0%;
+            height: 70px;
+            width: 100%;
+        }
+
+        .titleTopSellerItem{
+            position: absolute;
+            z-index: 10;
+            bottom: 0%;
+            padding-left: 10px;
+            padding-bottom: 5px;
         }
 
         /* New Releases */
