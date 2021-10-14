@@ -1,12 +1,12 @@
-*{
-    margin: 2px;
-}
+/* *{
+    margin: 1px;
+} */
 
 body{
     margin: 0;
     padding: 0;
     font-size: 24px;
-    color: #101010;
+    color: #444444;
     height: 100px;
     text-align: center;
 }
@@ -19,38 +19,72 @@ body{
 
 .flex-main{
 display: flex;
-height: 225vh;
+height: 175vh;
+
 }
 
 .container{
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     height: auto;
-    padding-bottom: 10%;
     background: #101010;
 }
 
+.container2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #101010;
+}
+
+.container3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+}
+
 .box{
-    width: 30%;
-    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+    height: 260px;
     background-color: purple;
     margin: 10px;
     box-sizing: border-box;
     font-size: 50px;
+    overflow: hidden;
     
 }
 
 .title{
-    color: black;
+    color: white;
+    padding-bottom: 5%;
+    font-family: 'Roboto Mono', monospace;
 }
+
+.gameTitle{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+    align-items: center;
+    height: 100px;
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+    color: blue;
+}
+
+
 
 .flex-nav{
     background-color: grey;
     padding-top: 3rem;
     color: white;
     flex: 1 1 5rem;
+
 }
 
 .flex-article{
@@ -60,13 +94,7 @@ height: 225vh;
 }
 
 .flex-footer{
-    background-color: orange;
-    padding-top: 15rem;
-    padding-bottom: 15rem;
-}
-
-@media all and (max-width: 540px) {
-    .flex-main {
-        flex-direction: column;
-    }
+    background-color: white;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
