@@ -11,16 +11,18 @@
     <!-- Navbar -->
     <div>
         <div id="Navbar" class="navbar">
-            <div class="title"><b> VGS </b></div>
-            <div>
-                <input class="textbox" id="textBox" type="Enter a city" placeholder="Search games">
-                <button class="search" onClick="search()" id="searchButton" >Search</button>
+            <div class="navbarTop">
+                <div class="title"><b> VGS </b></div>
+                <ul class="navListContainer">
+                    <li class="navList">New Releases</li>
+                    <li class="navList">Top Sellers</li>
+                    <li class="navList">Free To Play</li>
+                </ul>
             </div>
-            <ul class="navListContainer">
-                <li class="navList">New Releases</li>
-                <li class="navList">Top Sellers</li>
-                <li class="navList">Free To Play</li>
-            </ul>
+            <div class="searchbarContainer">
+                <input class="textbox" id="textBox" type="Enter a city" placeholder="Search games">
+                <button class="search" onClick="search()" id="searchButton" >Go</button>
+            </div>
             </div>
         </div>
 
