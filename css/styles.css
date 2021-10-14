@@ -96,7 +96,8 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            
+            -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
+            box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57);
         }
 
         .bannerColumns{
@@ -142,7 +143,7 @@
             height: 70px;
             font-size: 35px;
             align-items: flex-end;
-            background-color: green;
+            /* background-color: green; */
             padding-left: 35px;
             /* margin-bottom: 10px; */
         }
@@ -150,7 +151,7 @@
         .topSellerWords{
             text-decoration: none;
             color: black;
-            background-color: thistle;
+            /* background-color: thistle; */
         }
         .topSellerContainer{
             display: flex;
@@ -160,28 +161,45 @@
             justify-content: space-around;
             height: 300px;
             align-items: center;
-            background-color: brown;
+            /* background-color: brown; */
             padding-left: 20px;
             padding-right: 20px;
 
         }
         .topSellerItem{
-            width: 23%;
-            height: 80%;
-            background-color: black;
-            /* justify-content: center; */
+            width: 20%;
+            height: 100%;
+            /* background-color: pink; */
+            justify-content: center;
             display: flex;
             align-items: flex-end;
-            /* padding-bottom: 10px; */
-            /* padding-left: 25px; */
+            /* padding-bottom: 10px;
+            padding-left: 25px; */
+            -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
+            box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57);
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
         }
-        .topSellerImage{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
+        .imagetopSellerItem{
             height: 100%;
-            box-sizing: border-box;
+        }
+        .opacityTopSellerItem{
+            position: absolute;
+            background-color: black;
+            opacity: 70%;
+            z-index: 5;
+            bottom: 0%;
+            height: 70px;
+            width: 100%;
+        }
+
+        .titleTopSellerItem{
+            position: absolute;
+            z-index: 10;
+            bottom: 0%;
+            padding-left: 10px;
+            padding-bottom: 5px;
         }
 
         /* New Releases */
