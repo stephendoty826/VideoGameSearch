@@ -54,6 +54,7 @@
             height: 35px;
             width: 90%;
             padding-left: 20px;
+            opacity: 100%;
         }
         .navList{
             text-decoration: none;
@@ -83,6 +84,8 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
+            -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
+            box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57);
         }
 
         .bannerColumns{
@@ -146,6 +149,8 @@
             align-items: flex-end;
             padding-bottom: 10px;
             padding-left: 25px;
+            -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
+            box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57);
         }
 
         /* New Releases */

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+    <form autocomplete="off" action="">
+        <input id="search" type="search" placeholder="Search Games">
+    </form>
+    
+
+
+    <div id="results"></div>
+
+
+    <script src="games.js"></script>
+    <script src="js/apiKeys.js"></script>   
+
+    <script>
+        console.log(games)
+        let gameFilter = []
+        let searchInput = document.querySelector('#search')
+        
+        searchInput.addEventListener('keyup', (e) => {
+        let displayGameResults = ""
+            gameFilter = games.filter(game =>{
+                if(e.target.value.length == 0){
+                    return
+                }
+                else {
+                    return game.name.toLowerCase().includes(e.target.value.toLowerCase())
+                }
+            })
+            console.log(gameFilter)
+            gameFilter.forEach(game =>{
+                displayGameResults += `<li id=${game.id} class="searchResults">${game.name}</li>`
+            })
+
+
+            results.innerHTML = `<ul>${displayGameResults}</ul>`
+        })
+
+        results.addEventListener("click", (e)=>{
+            let id = e.target.id
+            fetch(`https://api.rawg.io/api/games/${id}?key=${apiKeyRAWG}`)
+            .then(response => response.json())
+            .then((data) => {
+                console.log(data);
+            })
+        })
+
+//         searchInput.addEventListener("click", (e) => {
+//             console.log(e.target.name)
+//             let id = e.target.id
+//             console.log(id)
+//         })
+    </script>
+
+
+</body>
+</html>
