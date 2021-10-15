@@ -48,6 +48,11 @@
             box-sizing: border-box;
             /* background-color: thistle; */
         }
+
+        a.navList:hover{
+            color: cadetblue;
+        }
+
         .searchbarContainer{
             display: flex;
             width: 96%;
