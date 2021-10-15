@@ -29,7 +29,6 @@
                             display: flex;
                             justify-content: space-between;
                             /* background-color: brown; */
-
                         }
                         .titleNav{
                             color: white;
@@ -42,7 +41,7 @@
                         .navListContainer{
                             display: flex;
                             justify-content: space-between;
-                            width: 35%;
+                            width: 600px;
                             height: 60%;
                             align-items: flex-end;
                             box-sizing: border-box;
@@ -87,7 +86,48 @@
         .footerContainer{
             height: 250px;
             width: 100%;
-            background-color: #1F1E1E;
+            border-radius: 25px;
+            padding-left: 20px;
+            background-color: rgb(22, 22, 22);
+            color: white;
+            outline: none;
+        }
+
+        .searchResultsContainer{
+            background-color: pink;
+            width: 93.5%;
+            position: relative;
+        }
+        .searchResults{
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            position: absolute;
+            overflow: scroll;
+        }
+        .displayGameResults{
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            padding-left: 10px;
+            height: 50px;
+            width: 100%;
+            background-color: rgb(60, 67, 80);
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(185, 196, 211);
+            z-index: 60;
+        }
+        .displayGameResults:hover{
+            background-color: rgb(185, 196, 211);
+            color: rgb(60, 67, 80);
+        }
+
+        .navList{
+            text-decoration: none;
+            list-style: none;
+            font-size: 23px;
+            color: white;
+            align-items: flex-end;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -344,7 +384,26 @@
             justify-content: center;
             align-items: center;
             display: flex;
+<<<<<<< HEAD
+            margin-top: 120px;
+        }
+        .bannerTitle{
+            font-size: 80px;
+        }
+        .screenshotContainer{
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            max-height: 300px;
+        }
+        .bannerScreenshots{
+            height: 300px;
+            width: 100%;
+            background-color: black;
+            color: white;
+=======
             margin-top: 130px;
+>>>>>>> 57d36e5062091bd7d6ce1b3cb1c05ee893bab3a1
         }
                     .bannerTitle{
                         font-size: 80px;
