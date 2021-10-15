@@ -107,21 +107,21 @@ height: 250vh;
     justify-content: space-around;
     width: 100%;
     height: auto;
-    background: #101010;
+    background: #1F1E1E;
 }
 
 .container2{
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    background-color: #101010;
+    background-color: #1F1E1E;
 }
 
 .container3{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: #fff;
+    background-color: #1F1E1E;
 }
 
 .box{
@@ -130,7 +130,7 @@ height: 250vh;
     align-items: center;
     width: 21%;
     height: 336px;
-    background-color: purple;
+    background-color: white;
     margin: 10px;
     box-sizing: border-box;
     font-size: 50px;
@@ -165,13 +165,13 @@ height: 250vh;
 }
 
 .flex-article{
-    background-color: #101010;
+    background-color: #1F1E1E;
     padding-top: 3rem;
     flex: auto;
 }
 
 .flex-footer{
-    background-color: orange;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    color: white;
+    background-color: #1F1E1E;
+    padding-top: 23rem;
 }
