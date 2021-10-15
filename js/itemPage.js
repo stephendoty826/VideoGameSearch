@@ -11,7 +11,7 @@ fetch(`https://api.rawg.io/api/games/${localStorage.id}?key=${apiKeyRAWG}`)
     console.log(data);
     bannerTitle.textContent = data.name
     // banner = 
-    infoDescription.textContent = data.description_rawgi
+    infoDescription.textContent = data.description_raw
 })
 
 // Fetching screenshots from RAWG

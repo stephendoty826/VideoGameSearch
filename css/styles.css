@@ -384,26 +384,7 @@
             justify-content: center;
             align-items: center;
             display: flex;
-<<<<<<< HEAD
-            margin-top: 120px;
-        }
-        .bannerTitle{
-            font-size: 80px;
-        }
-        .screenshotContainer{
-            display: flex;
-            justify-content: space-between;
-            height: auto;
-            max-height: 300px;
-        }
-        .bannerScreenshots{
-            height: 300px;
-            width: 100%;
-            background-color: black;
-            color: white;
-=======
             margin-top: 130px;
->>>>>>> 57d36e5062091bd7d6ce1b3cb1c05ee893bab3a1
         }
                     .bannerTitle{
                         font-size: 80px;
@@ -411,7 +392,8 @@
                     .screenshotContainer{
                         display: flex;
                         justify-content: space-between;
-                        height: 300px;
+                        height: auto;
+                        max-height: 300px;
                     }
                     .bannerScreenshots{
                         height: 300px;
@@ -464,6 +446,7 @@
                         font-size: 20px;
                         display: flex;
                         margin-left: 50px;
+                        overflow: scroll;
                     }
                     .ratingSection{
                         display: flex;
