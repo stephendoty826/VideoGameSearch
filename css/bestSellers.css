@@ -9,24 +9,102 @@ body{
     color: #444444;
     height: 100px;
     text-align: center;
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+/* --------------- */
+.newReleasesContainer2{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px; 
 }
 
+.newReleases2{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
+    box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57);
+}
+.newReleasesItem2{
+    display: flex;
+    width: 25%;
+    height: 450px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.imageNewReleasesItem2{
+    height:100%;
+}
+.opacityNewReleaseItem2{
+    position: absolute;
+    background-color: black;
+    opacity: 65%;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.newReleasesText2{
+    position: absolute;
+    color: white;
+    z-index: 20;
+    font-size: 130px;
+}
+
+/* ------------- */
+
 .flex-header{
+    /* height: 65vh; */
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #507085;
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+}
+
+.videoLayer{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0
+}
+
+.video{
+    height: 100%;
+    width: 100%;
+    z-index: 5
+}
+
+.opacity{
+    position: absolute;
+    background-color: black;
+    opacity: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 
 .flex-main{
 display: flex;
-height: 175vh;
-
+height: 250vh;
 }
 
 .container{
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: auto;
     background: #101010;
@@ -35,7 +113,7 @@ height: 175vh;
 .container2{
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #101010;
 }
 
@@ -51,13 +129,13 @@ height: 175vh;
     justify-content: center;
     align-items: center;
     width: 21%;
-    height: 260px;
+    height: 336px;
     background-color: purple;
     margin: 10px;
     box-sizing: border-box;
     font-size: 50px;
     overflow: hidden;
-    
+    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.57);
 }
 
 .title{
@@ -69,15 +147,14 @@ height: 175vh;
 .gameTitle{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 4rem;
     align-items: center;
     height: 100px;
     font-size: 40px;
     font-family: 'Roboto Mono', monospace;
-    color: blue;
+    color: white;
 }
-
-
 
 .flex-nav{
     background-color: grey;
@@ -94,7 +171,7 @@ height: 175vh;
 }
 
 .flex-footer{
-    background-color: white;
+    background-color: orange;
     padding-top: 10rem;
     padding-bottom: 10rem;
 }

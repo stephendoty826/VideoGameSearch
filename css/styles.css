@@ -2,15 +2,18 @@
 
         body{
             margin: 0%;
+            background: #F4F4F4;
+            background: linear-gradient(to right, #F4F4F4 0%, #E2E0E0 50%, #F4F4F4 100%);
+            font-family: 'Roboto Mono', monospace;
         }
 
         /* Navbar */
 
         .navbar{
             height: 120px;
-            background-color: black;
             display: flex;
             width: 100%;
+            background-color: #1F1E1E;
             justify-content: space-around;
             align-items: center;
             flex-direction: column;
@@ -27,7 +30,7 @@
             /* background-color: brown; */
 
         }
-        .title{
+        .titleNav{
             color: white;
             font-size: 40px;
             display: flex;
@@ -98,7 +101,7 @@
             justify-content: center;
             align-items: flex-end;
             -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
-            box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57);
+            box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.57);
         }
 
         .bannerColumns{
@@ -168,14 +171,13 @@
 
         }
         .topSellerItem{
-            width: 20%;
+            width: 23%;
             height: 100%;
-            /* background-color: pink; */
             justify-content: center;
             display: flex;
             align-items: flex-end;
-            /* padding-bottom: 10px;
-            padding-left: 25px; */
+            padding-left: 5px;
+            padding-right: 5px;
             -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
             box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57);
             position: relative;
@@ -199,29 +201,59 @@
             position: absolute;
             z-index: 10;
             bottom: 0%;
-            padding-left: 10px;
+            /* padding-left: 10px; */
             padding-bottom: 5px;
         }
 
         /* New Releases */
 
-        .newReleases{
+        .newReleasesContainer{
             width: 100%;
-            height: 500px;
+            height: 450px;
+            margin-top: 70px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 70px;
+        }
+
+        .newReleases{
+            width: 96%;
+            height: 450px;
+            display: flex;
+            background-color: #fff;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
+            box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57);
         }
         .newReleasesItem{
-            background-color: black;
             display: flex;
-            width: 96%;
+            width: 25%;
             height: 450px;
             color: white;
             justify-content: center;
             align-items: center;
-            font-size: 50px;
+            overflow: hidden;
+        }
+        .imageNewReleasesItem{
+            height:100%;
+        }
+        .opacityNewReleaseItem{
+            position: absolute;
+            background-color: black;
+            opacity: 65%;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+        .newReleasesText{
+            position: absolute;
+            color: white;
+            z-index: 20;
+            font-size: 135px;
         }
 
         /* footer */
