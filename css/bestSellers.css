@@ -137,9 +137,12 @@ height: 250vh;
     box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.57);
 }
 
-.title{
+.headtitle{
     color: white;
     padding-bottom: 5%;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .gameTitle{
