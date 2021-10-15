@@ -42,7 +42,7 @@
         .navListContainer{
             display: flex;
             justify-content: space-between;
-            width: 35%;
+            width: 600px;
             height: 60%;
             align-items: flex-end;
             box-sizing: border-box;
@@ -69,8 +69,37 @@
             background-color: rgb(22, 22, 22);
             color: white;
             outline: none;
-            
         }
+
+        .searchResultsContainer{
+            background-color: pink;
+            width: 93.5%;
+            position: relative;
+        }
+        .searchResults{
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            position: absolute;
+            overflow: scroll;
+        }
+        .displayGameResults{
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            padding-left: 10px;
+            height: 50px;
+            width: 100%;
+            background-color: rgb(60, 67, 80);
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(185, 196, 211);
+            z-index: 60;
+        }
+        .displayGameResults:hover{
+            background-color: rgb(185, 196, 211);
+            color: rgb(60, 67, 80);
+        }
+
         .navList{
             text-decoration: none;
             list-style: none;
@@ -294,7 +323,8 @@
         .screenshotContainer{
             display: flex;
             justify-content: space-between;
-            height: 300px;
+            height: auto;
+            max-height: 300px;
         }
         .bannerScreenshots{
             height: 300px;

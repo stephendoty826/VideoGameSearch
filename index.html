@@ -14,19 +14,22 @@
 <body>
     <!-- Navbar -->
     <div>
-    <div id="Navbar" class="navbar">
-        <div class="navbarTop">
-            <a class="titleNav" href="index.html">VGS</a>
-            <ul class="navListContainer">
-                <a class="navList" href="">New Releases</a>
-                <a class="navList" href="">Top Sellers</a>
-                <a class="navList" href="">Free To Play</a>
-            </ul>
-        </div>
-        <div class="searchbarContainer">
-            <input class="textbox" id="textBox" type="Enter a city" placeholder="Search games">
-            <!-- <button class="search" onClick="search()" id="searchButton" >Go</button> -->
-        </div>
+        <div id="Navbar" class="navbar">
+            <div class="navbarTop">
+                <a class="titleNav" href="index.html">VGS</a>
+                <ul class="navListContainer">
+                    <a class="navList" href="">New Releases</a>
+                    <a class="navList" href="">Top Sellers</a>
+                    <a class="navList" href="">Free To Play</a>
+                </ul>
+            </div>
+            <div class="searchbarContainer">
+                <input class="textbox" id="searchBar" type="Enter a city" placeholder="Search games">
+            </div>
+            <div class="searchResultsContainer">
+                <div class="searchResults">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -40,7 +43,6 @@
             </div>
         </div>
         <div class="bannerColumns">
-            <!-- <div class="bannerItem"></div> -->
             <img class="bannerItem" src="https://media.rawg.io/media/screenshots/0fa/0fa42f8d7b0ac6ff92ad19cb21485553.jpg" alt="Candy Crush Soda Saga">
             <div class="bannerTextContainer">
                 <a class="bannerMainText" href=""><b> Mobile Games</b></a>
@@ -76,7 +78,6 @@
             <div class="opacityTopSellerItem"></div>
             <div class="titleTopSellerItem">Apex</div>
         </div>
-
     </div>
 
     <!-- New Releases -->
@@ -106,8 +107,8 @@
         Footer
     </div>
 
-    <script src="games.js"></script>
+    <script src="games_temp.js"></script>
     <script src="js/apiKeys.js"></script>
-    <script src="js/apiFetch.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>

@@ -5,39 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bestSellers.css">
 </head>
 <body>
     <!-- Navbar -->
     <div>
         <div id="Navbar" class="navbar">
             <div class="navbarTop">
-                <div class="title"><b> VGS </b></div>
+                <a class="titleNav" href="index.html">VGS</a>
                 <ul class="navListContainer">
-                    <li class="navList">New Releases</li>
-                    <li class="navList">Top Sellers</li>
-                    <li class="navList">Free To Play</li>
+                    <a class="navList" href="">New Releases</a>
+                    <a class="navList" href="">Top Sellers</a>
+                    <a class="navList" href="">Free To Play</a>
                 </ul>
             </div>
             <div class="searchbarContainer">
-                <input class="textbox" id="textBox" type="Enter a city" placeholder="Search games">
-                <button class="search" onClick="search()" id="searchButton" >Go</button>
+                <input class="textbox" id="searchBar" type="Enter a city" placeholder="Search games">
             </div>
+            <div class="searchResultsContainer">
+                <div class="searchResults">
+                </div>
             </div>
         </div>
+    </div>
 
         <!-- Screen Shots -->
         <div id="banner" class="banner">
-            <div id="title" class="bannerTitle">Halo: Reach</div>
+            <div id="title" class="bannerTitle"></div>
         </div>
         <div class="screenshotContainer">
-            <div id="screenshot1" class="bannerScreenshots">Screenshot</div>
+            <!-- <div id="screenshot1" class="bannerScreenshots">Screenshot</div>
             <div id="screenshot2" class="bannerScreenshots">Screenshot</div>
-            <div id="screenshot3" class="bannerScreenshots">Screenshot</div>
+            <div id="screenshot3" class="bannerScreenshots">Screenshot</div> -->
         </div>
 
         <!-- info display -->
-        <div id="title" class="mainTitle">Halo: Reach</div>
+        <!-- <div id="title" class="mainTitle"></div> -->
         
         <!-- Game Info -->
         <div class="displayContainer">
@@ -80,5 +87,10 @@
     <div class="footer">
         Footer
     </div>
+
+    <script src="games_temp.js"></script>
+    <script src="js/apiKeys.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/itemPage.js"></script>
 </body>
 </html>
