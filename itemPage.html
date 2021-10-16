@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bestSellers.css">
 </head>
 <body>
     <!-- Navbar -->
     <div>
         <div id="Navbar" class="navbar">
             <div class="navbarTop">
-                <a class="titleNav" href="">VGS</a>
+                <a class="titleNav" href="index.html">VGS</a>
                 <ul class="navListContainer">
                     <a class="navList" href="">New Releases</a>
                     <a class="navList" href="">Top Sellers</a>
@@ -23,30 +24,33 @@
                 </ul>
             </div>
             <div class="searchbarContainer">
-                <input class="textbox" id="textBox" type="Enter a city" placeholder="Search games">
-                <!-- <button class="search" onClick="search()" id="searchButton" >Go</button> -->
+                <input class="textbox" id="searchBar" type="Enter a city" placeholder="Search games">
             </div>
+            <div class="searchResultsContainer">
+                <div class="searchResults">
+                </div>
             </div>
         </div>
+    </div>
 
         <!-- Screen Shots -->
         <div id="banner" class="banner">
-            <div id="title" class="bannerTitle">Halo: Reach</div>
+            <div id="title" class="bannerTitle"></div>
         </div>
         <div class="screenshotContainer">
-            <div id="screenshot1" class="bannerScreenshots">Screenshot</div>
+            <!-- <div id="screenshot1" class="bannerScreenshots">Screenshot</div>
             <div id="screenshot2" class="bannerScreenshots">Screenshot</div>
-            <div id="screenshot3" class="bannerScreenshots">Screenshot</div>
+            <div id="screenshot3" class="bannerScreenshots">Screenshot</div> -->
         </div>
 
         <!-- info display -->
-        <div id="title" class="mainTitle">Halo: Reach</div>
+        <!-- <div id="title" class="mainTitle">Halo: Reach</div> -->
         
         <!-- Game Info -->
         <div class="displayContainer">
         <div id="mainDisplay" class="mainDisplay">
             <div id="description" class="description">
-                <div class="infoDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque soluta natus nesciunt facere quis, minus, deserunt unde sequi delectus blanditiis ipsam maxime reiciendis nobis repellendus aliquam, nostrum consequatur a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque soluta natus nesciunt facere quis, minus, deserunt unde sequi delectus blanditiis ipsam maxime reiciendis nobis repellendus aliquam, nostrum consequatur a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic itaque soluta natus nesciunt facere quis, minus, deserunt unde sequi delectus blanditiis ipsam maxime reiciendis nobis repellendus aliquam, nostrum consequatur a.</div>
+                <div class="infoDescription"></div>
             </div>
 
             <div id="gameInfo" class="gameInfoContainer">
@@ -56,7 +60,7 @@
                     <div class="ratings">&nbsp;/&nbsp;</div>
                     <div id="rating_top" class="ratings">5</div>
                 </div>
-                <div id="genre" class="gameGenre">Action, Shooter</div>
+                <div id="genre" class="gameGenre"></div>
             </div>
         </div>
         </div>
@@ -102,5 +106,10 @@
             <div class="footerCopyRight">Copyright 2021 VGS All Right Reserved</div>
         </div>
     </div>
+
+    <script src="games_temp.js"></script>
+    <script src="js/apiKeys.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/itemPage.js"></script>
 </body>
 </html>

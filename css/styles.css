@@ -29,7 +29,6 @@
                             display: flex;
                             justify-content: space-between;
                             /* background-color: brown; */
-
                         }
                         .titleNav{
                             color: white;
@@ -42,7 +41,7 @@
                         .navListContainer{
                             display: flex;
                             justify-content: space-between;
-                            width: 35%;
+                            width: 600px;
                             height: 60%;
                             align-items: flex-end;
                             box-sizing: border-box;
@@ -87,7 +86,48 @@
         .footerContainer{
             height: 250px;
             width: 100%;
-            background-color: #1F1E1E;
+            box-sizing: border-box;
+            padding-left: 20px;
+            background-color: rgb(22, 22, 22);
+            color: white;
+            outline: none;
+        }
+
+        .searchResultsContainer{
+            background-color: pink;
+            width: 93.5%;
+            position: relative;
+        }
+        .searchResults{
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            position: absolute;
+            overflow-y: scroll;
+        }
+        .displayGameResults{
+            display: flex;
+            box-sizing: border-box;
+            align-items: center;
+            padding-left: 10px;
+            height: 50px;
+            width: 100%;
+            background-color: rgb(60, 67, 80);
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(185, 196, 211);
+            z-index: 60;
+        }
+        .displayGameResults:hover{
+            background-color: rgb(185, 196, 211);
+            color: rgb(60, 67, 80);
+        }
+
+        .navList{
+            text-decoration: none;
+            list-style: none;
+            font-size: 23px;
+            color: white;
+            align-items: flex-end;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -324,6 +364,9 @@
                         z-index: 20;
                         font-size: 135px;
                     }
+                    .newReleasesBottomSpace{
+                        height: 75px;
+                    }
 
 
 
@@ -339,7 +382,7 @@
         .banner{
             height: 500px;
             width: 100%;
-            background-color: black;
+            background-color: pink;
             color: white;
             justify-content: center;
             align-items: center;
@@ -352,7 +395,8 @@
                     .screenshotContainer{
                         display: flex;
                         justify-content: space-between;
-                        height: 300px;
+                        height: auto;
+                        max-height: 300px;
                     }
                     .bannerScreenshots{
                         height: 300px;
@@ -368,67 +412,75 @@
 
                 /* Info Display */
 
-        .mainTitle{
+        /* .mainTitle{
             height: 150px;
             display: flex;
             align-items: center;
             font-size: 60px;
             padding-left: 70px;
             
+        } */
+.displayContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+        .mainDisplay{
+            display: flex;
+            height: 500px;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            height: auto;
+            /* background-color: black; */
         }
-                    .mainDisplay{
-                        display: flex;
-                        height: 500px;
-                        width: 100%;
-                        flex-direction: row;
-                        justify-content: center;
-                        /* background-color: black; */
-                    }
-                    .description{
-                        /* background-color: pink; */
-                        width: 100%;
-                        height: 500px;
-                        justify-content: center;
-                        display: flex;
-                        margin-left: 20px;
-                    }
-                    .gameInfoContainer{
-                        /* background-color: red; */
-                        width: 100%;
-                        height: 500px;
-                        display: flex;
-                        align-items: center;
-                        flex-direction: column;
-                        /* margin-right: 20px; */
-                    }
-                    .infoDescription{
-                        font-size: 20px;
-                        display: flex;
-                        margin-left: 50px;
-                    }
-                    .ratingSection{
-                        display: flex;
-                        flex-direction: row;
-                    }
-                    .gameInfo{
-                        font-size: 45px;
-                    }
-                    .esrb{
-                        font-size: 30px;
-                        padding-bottom: 20px;
-                    }
-                    .ratings{
-                        font-size: 40px;
-                        padding-bottom: 20px;
-                    }
-                    .gameGenre{
-                        font-size: 30px;
-                    }
-                    .displayContainer{
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                    }
+        .description{
+            /* background-color: pink; */
+            width: 100%;
+            max-height: 500px;
+            justify-content: center;
+            text-align: left;
+            display: flex;
+            margin-left: 20px;
+            
+        }
+        .gameInfoContainer{
+            /* background-color: red; */
+            width: 100%;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            /* margin-right: 20px; */
+        }
+        .infoDescription{
+            font-size: 20px;
+            display: flex;
+            margin-left: 50px;
+            justify-content: left;
+            overflow: scroll;
+        }
+        .ratingSection{
+            display: flex;
+            flex-direction: row;
+        }
+        .gameInfo{
+            font-size: 45px;
+        }
+        .esrb{
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+        .ratings{
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+        .gameGenre{
+            font-size: 30px;
+        }
+
         .similar{
             width: 100%;
             height: 400px;
