@@ -13,7 +13,7 @@
 
 //https://api.rawg.io/api/games/1454?key=${apiKeyRAWG}
 
-console.log(games_temp) //todo change to games when search bar is working
+console.log(games_test) //todo change to games when testing is done
 let navbar = document.querySelector(".navbar")
 let searchInput = document.querySelector('#searchBar')
 let searchResults = document.querySelector(".searchResults")
@@ -21,7 +21,7 @@ searchInput.addEventListener('keyup', (e) => {
     let gameFilter = []
     let displayGameResults = ""
     if(searchInput.value){
-        gameFilter = games_temp.filter(game => { //todo change to games when search bar is working
+        gameFilter = games_test.filter(game => { //todo change to games when testing is done
             return game.name.toLowerCase().includes(e.target.value.toLowerCase())
         })
     }
