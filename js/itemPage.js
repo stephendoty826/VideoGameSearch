@@ -52,7 +52,6 @@ fetch(`https://api.rawg.io/api/games/${localStorage.id}?key=${apiKeyRAWG}`)
             genre.textContent += `${dataGenre.name} `
         }
     }
-    console.log(data.platforms[0].platform);
     // displays game platforms if available
     if(data.platforms.length > 0){
         for(let item of data.platforms){

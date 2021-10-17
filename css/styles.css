@@ -31,12 +31,15 @@
                             /* background-color: brown; */
                         }
                         .titleNav{
-                            color: white;
+                            color: rgb(139, 139, 139);
                             font-size: 40px;
                             display: flex;
                             justify-content: center;
                             align-items: flex-end;
                             text-decoration: none;
+                        }
+                        .titleNav:hover{
+                            color: white;
                         }
                         .navListContainer{
                             display: flex;
@@ -70,16 +73,15 @@
                             outline: none;
                             
                         }
-                        .navList{
+                        /* .navList{
                             text-decoration: none;
                             list-style: none;
                             font-size: 23px;
-                            color: white;
+                            color: rgb(139, 139, 139);
                             align-items: flex-end;
                             display: flex;
                             justify-content: flex-end;
-                            /* background-color: tomato; */
-                        }
+                        } */
 
         /* footer */
 
@@ -126,15 +128,17 @@
             text-decoration: none;
             list-style: none;
             font-size: 23px;
-            color: white;
+            color: rgb(139, 139, 139);
             align-items: flex-end;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
             font-size: 30px;
             margin-top: 50px;
             flex-direction: column;
+        }
+        .navList:hover{
+            color: white;
         }
 
                         .footerInnerDivTop{
@@ -187,65 +191,96 @@
 
         /* Banner */
 
-        .bannerBackground{
-            width: 100%;
-            height: 520px;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 130px;
-            /* background-color: tomato; */
-            
-            
-        }
-        .bannerItem{
-            width: 96%;
-            height: 400px;
-            background-color: black;
-            color: white;
-            font-size: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
-            box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.57);
-        }
-
+.bannerBackground{
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 130px;
+    /* background-color: tomato; */
+}
         .bannerColumns{
-            width: 100%;
+            width: auto;
             height: 100%;
             display: flex;
             justify-content: center;
-            /* align-items: center; */
+            align-items: center;
             flex-direction: column;
             /* background-color: brown; */
-            padding-left: 2%;
-            
+            /* padding-left: 2%; */
         }
-        .bannerMainText{
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            width: 100%;
-            height: 20px;
-            font-size: 25px;
-            margin-top: 10px;
-            text-decoration: none;
-            color: black;
-            /* background-color: blue; */
-        }
-        .bannerExploreText{
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            width: 100%;
-            height: 20px;
-            font-size: 20px;
-            margin-top: 10px;
-            text-decoration: none;
-            color: black;
-            /* background-color: blue; */
-        }
+        .bannerColumns:hover{
+            height: 103%
+        }                        
+                .bannerContainer{
+                    height: 100%;
+                    width: 890px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    /* background-color: blue; */
+                }
+                        .bannerItemContainer{
+                            height: 500px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            overflow: hidden;
+                            -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
+                            box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.57);
+                        }
+                                .bannerItemBackground{
+                                    height: auto;
+                                    width: 100%;
+                                    filter: blur(1rem);
+                                    position: absolute;
+                                    z-index: 3
+                                }
+                                .bannerItem{
+                                    /* background-color: black; */
+                                    width: auto;
+                                    /* width: 50px; */
+                                    height: 100%;
+                                    z-index: 5;
+                                    color: white;
+                                    font-size: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+
+                        .bannerTextContainer{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: left;
+                        }
+                                .bannerMainText{
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    width: 100%;
+                                    height: 20px;
+                                    font-size: 25px;
+                                    margin-top: 10px;
+                                    text-decoration: none;
+                                    color: black;
+                                    /* background-color: blue; */
+                                }
+                                .bannerExploreText{
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    width: 100%;
+                                    height: 20px;
+                                    font-size: 20px;
+                                    margin-top: 10px;
+                                    text-decoration: none;
+                                    color: black;
+                                    /* background-color: blue; */
+                                }
         /* Top Sellers */
 
         .topSellersWordSpacing{
@@ -290,6 +325,11 @@
             position: relative;
             z-index: 0;
             overflow: hidden;
+        }
+        .topSellerItem:hover{
+            width: 28%;
+            height: 105%;
+            box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.70);
         }
         .imagetopSellerItem{
             height: 100%;
@@ -356,6 +396,11 @@
                         width: 100%;
                         height: 100%;
                         z-index: 10;
+                    }
+                    .opacityNewReleaseItem:hover{
+                        /* filter:blur(5rem); */
+                        background-color: black;
+                        opacity: 45%;
                     }
                     .newReleasesText{
                         position: absolute;
