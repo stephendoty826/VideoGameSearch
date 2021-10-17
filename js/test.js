@@ -11,3 +11,11 @@
 //     x++
 // }
     
+let test = "a"
+
+if(test >= "a" && test <= "g"){
+    console.log("between a and g")
+}
+else{
+    console.log("test is >= e")
+}

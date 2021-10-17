@@ -418,10 +418,23 @@
                     height: 100%;
                     z-index: 10;
                 }
-                .bannerTitle{
+                .bannerTitleLG{
                     font-size: 80px;
                     position: absolute;
-                    z-index: 15
+                    z-index: 15;
+                    width: 70%;
+                }
+                .bannerTitleMD{
+                    font-size: 60px;
+                    position: absolute;
+                    z-index: 15;
+                    width: 70%;
+                }
+                .bannerTitleSM{
+                    font-size: 40px;
+                    position: absolute;
+                    z-index: 15;
+                    width: 70%;
                 }
 
         .screenshotContainer{
@@ -430,7 +443,8 @@
             /* justify-content: space-around; */
             height: auto;
             max-height: 500px;
-            overflow: scroll;
+            overflow: hidden;
+            overflow-x: scroll;
         }
                 .bannerScreenshots{
                     height: 300px;
@@ -500,6 +514,7 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+            overflow-y: scroll;
             /* margin-right: 20px; */
         }
         .infoDescription{
@@ -526,6 +541,15 @@
         }
         .gameGenre{
             font-size: 30px;
+        }
+        .gamePlatformContainer{
+            padding-top: 30px;
+            width: auto;
+            max-width: 300px;
+            font-size: 30px;
+        }
+        .gamePlatform{
+            font-size: 23px;
         }
 
         .similar{
