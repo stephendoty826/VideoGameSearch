@@ -96,7 +96,7 @@
         }
 
         .searchResultsContainer{
-            background-color: pink;
+            background-color: black;
             width: 93.5%;
             position: relative;
         }
@@ -207,21 +207,19 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            /* background-color: brown; */
-            /* padding-left: 2%; */
         }
         .bannerColumns:hover{
             height: 103%
-        }                        
+        }                    
                 .bannerContainer{
                     height: 100%;
                     width: auto;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    /* background-color: blue; */
                 }
                         .bannerItemContainer{
+                            background-color: white;
                             height: 500px;
                             width: 100%;
                             display: flex;
