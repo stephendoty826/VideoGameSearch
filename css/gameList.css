@@ -97,44 +97,47 @@ body{
 
 .flex-main{
 display: flex;
-height: 250vh;
+height: 235vh;
 }
 
 .container{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     justify-content: space-around;
-    width: 100%;
-    height: auto;
-    background: #1F1E1E;
+    flex-wrap: wrap;
+    color: white;
+    height: 100px;
 }
-
-.container2{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    background-color: #1F1E1E;
-}
-
-.container3{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: #1F1E1E;
-}
-
 .box{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 21%;
-    height: 336px;
-    background-color: white;
-    margin: 10px;
-    box-sizing: border-box;
-    font-size: 50px;
+    padding-bottom: 50px;
+}
+.underneath{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    padding-top: 18px;
+}
+.listImageContainer{
+    width: auto;
+    max-width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
+    box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57);
     overflow: hidden;
-    box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.57);
+}
+.listImageContainer:hover{
+    box-shadow: 0px 0px 13px 13px rgba(167, 215, 255, 0.8);
+}
+.gameImage{
+    height: 100%;
 }
 
 .headtitle{
@@ -145,7 +148,7 @@ height: 250vh;
     font-family: 'Roboto Mono', monospace;
 }
 
-.gameTitle{
+/* .gameTitle{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +157,7 @@ height: 250vh;
     height: 100px;
     font-size: 40px;
     color: white;
-}
+} */
 
 .flex-nav{
     background-color: grey;
@@ -175,3 +178,77 @@ height: 250vh;
     background-color: #1F1E1E;
     padding-top: 23rem;
 }
+
+/* newReleasesContainer2 */
+
+@media all and (max-width: 1500px){
+    .flex-main{
+        height: 300vh;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .flex-main{
+        height: 543vh;
+    }
+}
+
+@media all and (max-width: 750px){
+    .newReleasesContainer2{
+        visibility: hidden;
+        height: 0px;
+    }
+    
+    .flex-main{
+        height: 543vh;
+    }
+}
+
+/* @media all and (max-width: 1200px){
+    .flex-main{
+        display: flex;
+        height: 140vh;
+        }
+    .headtitle{
+        color: white;
+        padding-bottom: 5%;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font-size: 20px;
+        font-family: ‘Roboto Mono’, monospace;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            color: white;
+            height: 100px;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+        .underneath{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            color: white;
+            padding-top: 18px;
+        }
+    
+    .gameTitle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 4rem;
+        align-items: center;
+        height: 20px;
+        font-size: 20px;
+        color: white;
+    }
+} */

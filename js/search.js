@@ -50,7 +50,7 @@ searchInput.addEventListener('keyup', (e) => {
             })
         }
         else if(firstLetter >= "r" && firstLetter <= "s"){
-            gameFilter = gamesT.filter(game => {
+            gameFilter = gamesRtoS.filter(game => {
                 return game.name.toLowerCase().includes(e.target.value.toLowerCase())
             })
         }

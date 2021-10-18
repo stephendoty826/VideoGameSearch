@@ -88,4 +88,15 @@ fetch(`https://api.rawg.io/api/games/${localStorage.id}/screenshots?key=${apiKey
     }
 })
 
-// 
+let freeToPlay = document.querySelector("#free-to-play")
+
+freeToPlay.addEventListener("click", (e) => {
+    localStorage.searchContent = e.target.id
+    localStorage.image1 = "https://www.pcgamesn.com/wp-content/uploads/2019/03/dota-2.jpg"
+    localStorage.image2 = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/destiny-2-beyond-light-trailer-1591733289.png"
+    localStorage.image3 = "https://media.rawg.io/media/games/35b/35b47c4d85cd6e08f3e2ca43ea5ce7bb.jpg"
+    localStorage.image4 = "https://allpatchnotes.mncdn.com/wp-content/uploads/2020/10/warframe-29.2.1.jpg"
+    localStorage.titleTab = "VGS: Free To Play"
+    localStorage.headtitle = "Free To Play"
+    window.location.href = "gameList.html"
+})

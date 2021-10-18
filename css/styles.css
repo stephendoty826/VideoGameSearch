@@ -43,7 +43,7 @@
                         }
                         .navListContainer{
                             display: flex;
-                            justify-content: space-between;
+                            justify-content: flex-end;
                             width: 600px;
                             height: 60%;
                             align-items: flex-end;
@@ -197,7 +197,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 130px;
+    margin-top: 145px;
     /* background-color: tomato; */
 }
         .bannerColumns{
@@ -215,7 +215,7 @@
         }                        
                 .bannerContainer{
                     height: 100%;
-                    width: 890px;
+                    width: auto;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -640,9 +640,9 @@
             .navListContainer{
                 width: 65%;
             }
-            .navList{
+            /* .navList{
                 font-size: 20px;
-            }
+            } */
             .bannerBackground{
                 flex-direction: row;
                 margin-top: 50px;
