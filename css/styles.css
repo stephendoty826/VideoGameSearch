@@ -96,7 +96,7 @@
         }
 
         .searchResultsContainer{
-            background-color: pink;
+            background-color: black;
             width: 93.5%;
             position: relative;
         }
@@ -207,19 +207,13 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            /* background-color: brown; */
-            /* padding-left: 2%; */
         }
-        .bannerColumns:hover{
-            height: 103%
-        }                        
                 .bannerContainer{
                     height: 100%;
                     width: auto;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    /* background-color: blue; */
                 }
                         .bannerItemContainer{
                             height: 400px;
@@ -231,6 +225,9 @@
                             overflow: hidden;
                             -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
                             box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.57);
+                        }
+                        .bannerItemContainer:hover{
+                            box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.70);
                         }
                                 .bannerItemBackground{
                                     height: auto;
