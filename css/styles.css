@@ -222,7 +222,7 @@
                     /* background-color: blue; */
                 }
                         .bannerItemContainer{
-                            height: 500px;
+                            height: 400px;
                             width: 100%;
                             display: flex;
                             justify-content: center;
@@ -648,6 +648,9 @@
                 margin-top: 50px;
                 height: 450px;
             }
+            .bannerItemBackground{
+                height: 100px;
+            }
             .bannerItem{
                 width: 90%;
                 height: 200px;
@@ -658,6 +661,18 @@
                 margin-left: 8px;
                 width: 100%;
                 /* background-color: brown; */
+            }
+            .bannerItemContainer{
+                height: 200px;
+                width: 100%;
+            }
+            .bannerMainText{
+                font-size: 20px;
+            }
+            .topSellerItem:hover{
+                width: 400px;
+                height: 105%;
+                box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.70);
             }
             .topSellersWordSpacing{
                 justify-content: center;
@@ -671,7 +686,7 @@
                 width: 100%;
             }
             .topSellerItem{
-                height: 450px;
+                height: 465px;
                 width: 300px;
                 margin: 1px;
                 justify-content: flex-start;
