@@ -96,7 +96,7 @@
         }
 
         .searchResultsContainer{
-            background-color: pink;
+            background-color: black;
             width: 93.5%;
             position: relative;
         }
@@ -207,22 +207,16 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            /* background-color: brown; */
-            /* padding-left: 2%; */
         }
-        .bannerColumns:hover{
-            height: 103%
-        }                        
                 .bannerContainer{
                     height: 100%;
                     width: auto;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    /* background-color: blue; */
                 }
                         .bannerItemContainer{
-                            height: 500px;
+                            height: 400px;
                             width: 100%;
                             display: flex;
                             justify-content: center;
@@ -231,6 +225,9 @@
                             overflow: hidden;
                             -webkit-box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.57); 
                             box-shadow: 2px 2px 7px 1px rgba(0, 0, 0, 0.57);
+                        }
+                        .bannerItemContainer:hover{
+                            box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.70);
                         }
                                 .bannerItemBackground{
                                     height: auto;
@@ -648,6 +645,9 @@
                 margin-top: 50px;
                 height: 450px;
             }
+            .bannerItemBackground{
+                height: 100px;
+            }
             .bannerItem{
                 width: 90%;
                 height: 200px;
@@ -658,6 +658,18 @@
                 margin-left: 8px;
                 width: 100%;
                 /* background-color: brown; */
+            }
+            .bannerItemContainer{
+                height: 200px;
+                width: 100%;
+            }
+            .bannerMainText{
+                font-size: 20px;
+            }
+            .topSellerItem:hover{
+                width: 400px;
+                height: 105%;
+                box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.70);
             }
             .topSellersWordSpacing{
                 justify-content: center;
@@ -671,7 +683,7 @@
                 width: 100%;
             }
             .topSellerItem{
-                height: 450px;
+                height: 465px;
                 width: 300px;
                 margin: 1px;
                 justify-content: flex-start;

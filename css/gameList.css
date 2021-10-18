@@ -97,7 +97,9 @@ body{
 
 .flex-main{
 display: flex;
-height: 235vh;
+height: 200vh;
+overflow-y: scroll;
+background-color: #1F1E1E;
 }
 
 .container{
