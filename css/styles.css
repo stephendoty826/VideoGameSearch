@@ -491,7 +491,7 @@
             height: auto;
             max-height: 500px;
             overflow: hidden;
-            overflow-x: scroll;
+            overflow: scroll;
         }
                 .bannerScreenshots{
                     height: 300px;
@@ -718,8 +718,5 @@
             .description{
                 margin-bottom: 100px;
                 margin-left: 0px;
-            }
-            .screenshotContainer{
-                flex-direction: column;
             }
         }
