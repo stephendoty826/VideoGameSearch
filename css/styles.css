@@ -40,6 +40,7 @@
                         }
                         .titleNav:hover{
                             color: white;
+                            cursor: pointer;
                         }
                         .navListContainer{
                             display: flex;
@@ -139,6 +140,7 @@
         }
         .navList:hover{
             color: white;
+            cursor: pointer;
         }
 
                         .footerInnerDivTop{
@@ -228,6 +230,7 @@
                         }
                         .bannerItemContainer:hover{
                             box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.70);
+                            cursor: pointer;
                         }
                                 .bannerItemBackground{
                                     height: auto;
@@ -327,6 +330,7 @@
             width: 28%;
             height: 105%;
             box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.70);
+            cursor: pointer;
         }
         .imagetopSellerItem{
             height: 100%;
@@ -398,6 +402,7 @@
                         /* filter:blur(5rem); */
                         background-color: black;
                         opacity: 45%;
+                        cursor: pointer;
                     }
                     .newReleasesText{
                         position: absolute;
@@ -670,6 +675,7 @@
                 width: 400px;
                 height: 105%;
                 box-shadow: 2px 2px 7px 1px rgba(0,0,0,0.70);
+                cursor: pointer;
             }
             .topSellersWordSpacing{
                 justify-content: center;
