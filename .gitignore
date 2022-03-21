@@ -1,3 +1,6 @@
 
-apiKeys.js
 data.js
+
+apiKeys.js
+# Local Netlify folder
+.netlify
